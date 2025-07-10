@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEXT STYLING PROPERTIES</title>
+        <style>
+            /* This is Typography*/
+            .text1 {
+                color: red;
+
+                font-size:30px;}
+            
+                .p1 {
+color:blue;
+font-family:'Courier New'}
+/* This is TRANSFORM */
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;}
+    #myDiv {
+        transform: rotateX(180deg);}
+        /* TEXT DECORATION AND TEXT TRANSFORM */
+        h1 {
+        text-decoration: overline;
+        text-transform: capitalize;}
+        h2 {
+            text-decoration: line-through;
+            text-transform: uppercase;}
+        h3 {
+            text-decoration:underline;
+            text-transform: lowercase;}
+        h4 {
+            text-decoration: underline overline;
+            text-transform: none;}
+            /* TEXT SHADOW , BOX SHADOW AND TEXT INDENT */
+            *{
+                text-align: center;
+                font-family: monospace;}
+            *text{
+                text-shadow: 2px 2px 1px #CC5500;
+                /* (right-offset)px (left-offset)px (fade)px color */}
+            #box{
+                box-shadow: 9px 9px 5px #301934;
+                /* (right-offset)px (left-offset)px (fade)px color */}
+            #indent{
+                text-indent: 50%; //16px or -3em}
+        </style>
+    </head>
+    <body>
+        <b>1.TYPOGRAPHY</b>
+        <p class="text1"> Hello Everyone</p>
+        <p class="p1"> I am a cricketer.</p>
+        <hr>
+        <b>2.TRANSFORM OR ROTATION</b>
+        <div>
+            BABAR AZAM
+        </div>
+        <div id="myDiv">
+            VIRAT KOHLI
+        </div>
+        <hr>
+<b>3.TEXT DECORATIONN AND TEXT TRANFORM</b>
+<h1> GAME </h1>
+<h2> CRICKET </h2>
+<h3> CODING </h3>
+<h4> STUDY </h4>
+<hr>
+<b>4.TEXT SHADOW < BOX SHADOW AND TEXT INDENT</b>
+<h5 id="text"> TEXT SHADOW </h5>
+<h6 id="box"> BOX SHADOW </h6>
+
+<div>
+    <p> TEXT INDENT EXAMPLE </p>
+    <p id="indent"> EXAPLEEEEEE </p>
+</div>
+    </body>
+</html>
