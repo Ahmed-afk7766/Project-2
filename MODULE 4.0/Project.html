@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning and Opacity Holding</title>
+        <style>
+            div {
+                right: 60px;
+                border: 5px solid green; 
+            }
+            div.absolute {
+                position: absolute;
+                left: 130px;
+                border: 7px solid blue;
+            }
+            div.relative {
+                position: relative;
+                bottom: 70px;
+                left: 120px;
+                border: 8px solid blue;
+            }
+            div.fixed {
+                position: Fixed;
+                right: 20px;
+                width: 300px;
+                border: 5px solid blue
+            }
+            div.sticky {
+                position: sticky;
+                bottom: 1px;
+            left: 20px;
+                width: 100px;
+                border: 6px solid green;
+            }
+            div.first {
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> This Information is about Gamimg:</h2>
+        <div>
+<!--TEXT WITH NO POSITION PROPERTY-->
+ <div class="first"><b>GAMING</b></div>
+        </div><br>
+        <!--TEXT WITH ABSOLUTE POSITION-->
+<div class="absolute">
+    <p>However it is a earning source of many people.</p>
+</div>
+<!--TEXT WITH STICKY POSITION-->
+<div class="sticky">
+<p> <i><b>Gamimg is a very underrated sport in Asian Countries.</i></b></p>
+</div>
+<!--TEXT WITH FIXED POSITION-->
+<div class="fixed">
+    <p> Many opportunities are now being given to youngsters so that they can earn through gaming like through esports etc.</p>
+</div>
+<!--TEXT WITH RELATIVE POSITION-->
+<div class="relative">
+ <p> People are now taking it seriously because of the upcoming opportunities</p>
+</div>
+    </body>
+</html>
