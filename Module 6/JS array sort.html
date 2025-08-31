@@ -16,6 +16,7 @@
         document.getElementById("result").innerHTML = points;
         function ascending() {
             points.sort(function(a, b){return a - b});
+            document.getElementById("result").innerHTML = points;
         }
         function descending() {
             points.sort(function(a, b){return b - a});
