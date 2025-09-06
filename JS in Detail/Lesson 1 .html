@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>JS Error Holding</h2>
+
+    <p id="error_message"></p>
+
+    <script>
+        try {
+            addalert("Welcome guest");
+        }
+        catch(err) {
+            document.getElementById("error_message").innerHTML = 
+            err.message;
+        }
+    </script>
+</body>
+</html>
