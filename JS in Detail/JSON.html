@@ -9,7 +9,7 @@
     <h2>Convert A JS Object into a JSON String,and snd it to the server.</h2>
     <p id="result"></p>
     <script>
-        var myObj = { name: "Fizza", age: 12, grade: 7 };
+        var myObj = { name: "Ahmed", age: 12, grade: 7 };
         var myJSON = JSON.stringify(myObj); //Converts Object To JSON for Sending Data
         var newObj = JSON.parse(myJSON); // Convert JSON into obj while receiving data
         document.getElementById("result").innerHTML = newObj.name;
