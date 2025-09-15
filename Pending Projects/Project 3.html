@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .fruit-list {
+      font-size: 1.2em;
+      margin: 20px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fruit Shop</h1>
+  <div class="fruit-list" id="fruitList">Fruits: Apple, Banana, Cherry</div>
+  <p id="mathResult">Square root of 9 = ??</p>
+  <button onclick="buyFruit()">Buy a Fruit</button>
+
+  <script>
+    let fruits = ["Apple", "Banana", "Cherry"];
+    document.getElementById('mathResult').innerHTML = Square root of 9 = ${Math.sqrt(9)};
+
+    function buyFruit() {
+      // Call stack: buyFruit()
+      if (fruits.length > 0) {
+        let bought = fruits.pop();
+        document.getElementById('fruitList').innerHTML = Fruits: ${fruits.join(", ")};
+        alert(You bought a ${bought}!);
+      } else {
+        alert("No more fruits!");
+      }
+    }
+  </script>
+</body>
+</html>
