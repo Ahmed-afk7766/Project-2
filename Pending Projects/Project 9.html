@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sorting and Mapping in JavaScript</title>
+</head>
+<body>
+    <h1>Array Sorting and Mapping</h1>
+    <div id="output"></div>
+    <script>
+        // Create an array of numbers
+        let originalArray = [5, 2, 9, 1, 7];
+
+        // Map the array (double each number)
+        let mappedArray = originalArray.map(num => num * 2);
+
+        // Sort the mapped array in ascending order
+        let ascendingSorted = [...mappedArray].sort((a, b) => a - b);
+
+        // Sort the mapped array in descending order
+        let descendingSorted = [...mappedArray].sort((a, b) => b - a);
+
+        // Output to webpage
+        let output = document.getElementById("output");
+        output.innerHTML = `
+            <strong>Original Array:</strong> ${originalArray.join(", ")}<br>
+            <strong>Mapped Array (doubled):</strong> ${mappedArray.join(", ")}<br>
+            <strong>Ascending Sorted:</strong> ${ascendingSorted.join(", ")}<br>
+            <strong>Descending Sorted:</strong> ${descendingSorted.join(", ")}
+        `;
+    </script>
+</body>
+</html>
