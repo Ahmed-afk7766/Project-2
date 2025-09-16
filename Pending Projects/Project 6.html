@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial; margin: 20px;">
+<h2>Simple Input and Display</h2>
+
+Name: <input type="text" id="name" value="John"><br>
+<button type="button" onclick="displayName()">Display Name</button>
+
+<br><br>
+Colors (comma-separated): <input type="text" id="colors" value="Red,Green,Blue"><br>
+<button type="button" onclick="displayColors()">Display Colors</button>
+
+<div id="output"></div>
+
+<script>
+function displayName() {
+  var name = document.getElementById("name").value;
+  document.getElementById("output").innerHTML = "Name: " + name;
+}
+
+function displayColors() {
+  var colors = document.getElementById("colors").value.split(",");
+  document.getElementById("output").innerHTML = "Colors: " + colors.join(", ");
+}
+</script>
+
+</body>
+</html>
