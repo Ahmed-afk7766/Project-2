@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Class Example</title>
+</head>
+<body>
+    <h1>JavaScript Class Example</h1>
+    <div id="output"></div>
+    <script>
+        // Define a class
+        class Person {
+            constructor(name) {
+                this.name = name; // 'this' refers to the instance
+            }
+
+            // Instance method
+            greet() {
+                return "Hello, I'm " + this.name + ".";
+            }
+
+            // Static method
+            static sayHi() {
+                return "Hi there!";
+            }
+        }
+
+        // Inherit from the Person class
+        class Student extends Person {
+            constructor(name, course) {
+                super(name); // Call the parent class constructor
+                this.course = course;
+            }
+
+            showCourse() {
+                return "I'm studying " + this.course + ".";
+            }
+        }
+
+        // Create an instance of Student
+        let student = new Student("Ali", "Computer Science");
+        let output = document.getElementById("output");
+        output.innerHTML = student.greet() + "<br>" + student.showCourse() + "<br>" + Person.sayHi();
+    </script>
+</body>
+</html>
