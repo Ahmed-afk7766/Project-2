@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handle Errors in JavaScript</title>
+</head>
+<body>
+    <h1>Error Handling with try...catch</h1>
+    <div id="output"></div>
+    <script>
+        try {
+            // Attempt to parse invalid JSON
+            JSON.parse("Invalid JSON");
+        } catch (error) {
+            // Display the error message on the webpage
+            let output = document.getElementById("output");
+            output.innerHTML = "An error occurred: " + error.message;
+        }
+    </script>
+</body>
+</html>
