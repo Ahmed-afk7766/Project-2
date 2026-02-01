@@ -26,8 +26,8 @@ def msg():
 
 button1 = Button(root,
                  text="Let's get started!",
-                 commad=msg,
-                 bg='brwon',
+                 command=msg,
+                 bg='brown',
                  fg='white')
 button1.place(x=260, y=360)
 
