@@ -1,0 +1,17 @@
+For function1, the goes like this:
+(4*5)/2
+
+So, the number of iteration Will be 1.
+
+For function2 it goes like this:
+1+2+3+4
+
+S0, number of iterations wil be 1 + 1 + 1
++ 1 = 4
+
+For function3, it goes like:
+
+1     +  (1+1) + ( 1 + 1 + 1)+(1+1+1+1)
+
+So, number fo iterations will be 1 + 2 + 3 + 4 = 10
+
